@@ -1,0 +1,7 @@
+parameters:
+    level: 5 # Or any level from 0 (lowest) to 9 (highest)
+    paths:
+        - .
+    excludePaths:
+        - vendor
+        - tests
