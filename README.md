@@ -1,12 +1,10 @@
 # Project README
 
-## Overview
-
-This project is a PHP-based shopping cart system that includes functionality for managing products, delivery rules, and promotional offers. The code is organized into classes, enums, and interfaces to maintain a clean architecture.
-
 ## Prerequisites
 
 Docker
+Phpstan
+Phpunit
 
 ```bash
 docker compose up --build
@@ -32,12 +30,12 @@ To execute the tests defined in your project, run:
 ```
 
 
-### Step 7: Accessing the Container
-
-If you need to access the container's shell for debugging or other purposes, you can run:
+### Step 7: Running phpstan
+run:
 
 ```bash
-docker-compose run app bash
+docker exec -it <container_name> bash
+vendor/bin/phpstan analyse
 ```
 
 ## Major Code Components
